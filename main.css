@@ -26,8 +26,9 @@ body{
 }
 
 h1, h2, h3, h4, h6 {
-  color: #000930;
+  color: #000;
   margin-bottom: 1px;
+  font-weight: 100;
 }
 
 h5{
@@ -45,6 +46,7 @@ h5{
 .app{
   width: 100%;
   color: #000000;
+  font-weight: 300;
 }
 
 p{
