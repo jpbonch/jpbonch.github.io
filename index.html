@@ -15,8 +15,9 @@
 </head>
 
 <body>
-  <div id='particles-js'></div>
   <div class='header'></div>
+  <div id='particles-js'></div>
+
   <div class='content'>
 
 
@@ -59,13 +60,12 @@
 
 
 
-    <div class='app-section'>
 
 
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <span class='caption'>AITC Blog</span><img src="media/aitc.png" alt="Abingdon Investment & Trading Club" style="width:40px;height:40px;">
+            <p class='caption'>AITC Blog<img src="media/aitc.png" alt="Abingdon Investment & Trading Club" style="width:40px;height:40px;vertical-align:bottom"></p>
             <p class='hex-text'>A blog-styled website where members of the Investment & Trading club could share
               ideas and information, to encourage collaboration
               and pooling of insights into market behaviour.</p>
@@ -89,7 +89,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <span class='caption'>Chat Room App💬</span>
+            <p class='caption'>Chat Room App💬</p>
             <p class='hex-text'>A realtime messaging app, using Socket.IO for
               bi-directional communication between web clients and the server.
               It runs on the lightweight Flask Python framework.</p>
@@ -111,7 +111,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <span class='caption'>Stock Predictor📈</span>
+            <p class='caption'>Stock Predictor📈</p>
             <p class='hex-text'>A stock predicting program using the machine learning
               models support vector machine and linear regression, predicting 30 days
               into the future. It uses the financial data feed Quandl.</p>
@@ -165,12 +165,11 @@
         </span>
       </div>
 
-    </div>
-
 
 
 
   </div>
+
   <script type='text/javascript' src="particles.js"></script>
   <script>
     particlesJS.load('particles-js', 'particles.json', function() {
