@@ -49,17 +49,16 @@ position: fixed;
   opacity: 70%;
   position: absolute;
   background-color: #11121a;
-  width: 100%;
-  height: 300px;
+  width: 110%;
+  left: -20px;
+  top: -100px;
+  height: 400px;
   z-index: -998;
   margin: 0;
   padding: 0;
-  /* transform: rotate(-2deg); */
+  transform: rotate(-5deg);
 }
 
-/* .app-section{
-  margin-top: 100px;
-} */
 
 .header-text{
   display: inline-block;
@@ -124,8 +123,6 @@ position: fixed;
   transform: rotateY(180deg);
 }
 
-
-
 p{
   padding: 2px;
   margin: 0px;
@@ -158,10 +155,7 @@ span {
 
 .gotoapp:hover{
   cursor: pointer;
-}
-
-.hex-text{
-  margin-top: 0px;
+  background-color: rgb(210, 210, 210, 0.5);
 }
 
 .feature-divider{
@@ -182,20 +176,10 @@ span {
   box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
 }
 .simpleapp:hover{
-  background: #cccccc;
+  background: rgb(210, 210, 210, 0.5);
   cursor: pointer;
 }
 
 .title {
   font-size: 50px;
-}
-
-.site-header .nav-link {
-  color: #003b70;
-  font-size: 30px;
-  font-weight: 200;
-}
-
-.nav-link:hover {
-  color: #bfff00;
 }
