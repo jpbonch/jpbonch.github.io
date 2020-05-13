@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src='index.js'></script>
   <link rel='icon' href='media/tricknac.jpg'>
   <title>Portfolio</title>
 </head>
@@ -17,139 +18,139 @@
 
   <div class='content'>
 
-
-    <div class='header-text'>
+    <div class='contactlist'>
       <h1 class='title'>John Bonchristiano</h1>
-      <img src='media/email.png' style="width:25px;height:25px;">
-      <span>&nbsp;jp.bonchristiano@gmail.com</span>
+
+
+      <div class="tooltip">
+        <img class='redirecticon' src='media/email.png' style="width:25px;height:25px;" onclick="copyFunction('email')">
+        <span class="tooltiptext" id='emailtooltiptext'>Copy to clipboard</span>
+      </div>
+      <span id='email'>jp.bonchristiano@gmail.com</span>
       <br>
-      <img src='media/phone.png' style="width:25px;height:25px;">
-      <span> +44 7376 417513</span>
+      <div class='tooltip'>
+        <img class='redirecticon' src='media/phone.png' style="width:25px;height:24px;" onclick="copyFunction('phone')">
+        <span class="tooltiptext" id='phonetooltiptext'>Copy to clipboard</span>
+      </div>
+      <span id='phone'>+44 7376 417513</span>
+      <br>
+      <!-- <img class='redirecticon' src='media/cv.png' style="width:30px;height:30px;" onclick="location.href='cv.pdf';"> -->
+      <img class='redirecticon' src='media/github.png' style="width:25px;height:25px;" onclick="location.href='https://github.com/tricknac';">
+      <span> tricknac</span>
+      <!-- <img class='redirecticon' src='media/linkedin.png' style="width:30px;height:30px;" onclick="location.href='https://www.linkedin.com/in/johnbonc';"> -->
     </div>
-    <p style='margin-left:5px;'>
-      <!-- <img src='media/cv.png' style="width:30px;height:30px;cursor: pointer;" onclick="location.href='cv.pdf';"> -->
-
-      <img class='coolimg' src='media/github.png' style="width:30px;height:30px;cursor: pointer;" onclick="location.href='https://github.com/tricknac';" style="cursor: pointer;">
-
-      <img class='coolimg' src='media/globe.png' style="width:30px;height:30px;cursor: pointer;" onclick="location.href='https://tricknac.github.io';" style="cursor: pointer;">
-
-      <!-- <img src='media/linkedin.png' style="width:30px;height:30px;cursor: pointer;" onclick="location.href='https://www.linkedin.com/in/johnbonc';" style="cursor: pointer;"> -->
-    </p>
-    <div style="margin-left:5px;">
+    <div class='iconlist'>
       <h1 style='font-size: 15px'>TOOLS I USE:</h1>
-      <img class='coolimg' src='media/python.png' style="width:40px;height:40px;">
+      <img class='icon' src='media/python.png' style="width:40px;height:40px;">
       <!-- <img src='media/tensorflow.png' style="width:40px;height:40px;"> -->
-      <img class='coolimg' src='media/django.png' style="width:80px;height:40px;">
-      <img class='coolimg' src='media/flask.png' style="width:75px;height:40px;">
-
-      <img class='coolimg' src='media/js.png' style="width:40px;height:40px;">
+      <img class='icon' src='media/django.png' style="width:80px;height:40px;">
+      <img class='icon' src='media/flask.png' style="width:75px;height:40px;">
+      <img class='icon' src='media/js.png' style="width:40px;height:40px;">
       <!-- <img src='media/react.png'style="width:40px;height:40px;"> -->
-      <img class='coolimg' src='media/jquery.png' style="width:40px;height:40px;">
-      <img class='coolimg' src='media/html.png' style="width:45px;height:40px;">
-      <img class='coolimg' src='media/css.png' style="width:33px;height:40px;">
-      <img class='coolimg' src='media/bootstrap.png' style="width:45px;height:40px;">
+      <img class='icon' src='media/jquery.png' style="width:40px;height:40px;">
+      <img class='icon' src='media/html.png' style="width:45px;height:40px;">
+      <img class='icon' src='media/css.png' style="width:33px;height:40px;">
+      <img class='icon' src='media/bootstrap.png' style="width:45px;height:40px;">
       <!-- <img src='media/mysql.png'style="width:45px;height:40px;"> -->
-      <img class='coolimg' src='media/git.png' style="width:90px;height:40px;">
-      <br><br>
+      <img class='icon' src='media/git.png' style="width:90px;height:40px;">
     </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <p class='caption'>AITC Blog<img src="media/aitc.png" alt="Abingdon Investment & Trading Club" style="width:40px;height:40px;vertical-align:bottom"></p>
-          <p class='hex-text'>A blog-styled website where members of the Investment & Trading club could share
-            ideas and information, to encourage collaboration
-            and pooling of insights into market behaviour.</p>
-        </div>
-        <div class="flip-card-back">
-          <p>Django | SQL | Heroku</p>
-          <hr class='feature-divider'>
-          <p>Authentication | Bootstrap4</p>
-          <hr class='feature-divider'>
-          <img src='media/bootstrap.png' style="width:45px;height:40px;">
-          <img src='media/django.png' style="width:80px;height:35px;">
-          <img src='media/sqlite.png' style="width:90px;height:40px;"><br>
-          <img class='coolimg' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/aitcblog';" style="cursor: pointer;">
-          <button class='gotoapp' onclick="location.href = 'https://aitcblog.herokuapp.com';">GO TO APP</button>
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <p class='caption'>Chat Room App💬</p>
-          <p class='hex-text'>A realtime messaging app, using Socket.IO for
-            bi-directional communication between web clients and the server.
-            It runs on the lightweight Flask Python framework.</p>
-        </div>
-        <div class="flip-card-back">
-          <p>Flask | SQL | Heroku</p>
-          <hr class='feature-divider'>
-          <p>Socket.IO | Python</p>
-          <hr class='feature-divider'>
-          <img src='media/socketio.png' style="width:45px;height:40px;">
-          <img src='media/flask.png' style="width:70px;height:35px;">
-          <img src='media/sqlite.png' style="width:90px;height:40px;"><br>
-          <img class='coolimg' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/flaskmsg';" style="cursor: pointer;">
-          <button class='gotoapp' onclick="location.href = 'http://flaskmsg.herokuapp.com/';">GO TO APP</button>
-
+    <div class='cards'>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class='caption'>AITC Blog<img src="media/aitc.png" alt="Abingdon Investment & Trading Club" style="width:40px;height:40px;vertical-align:bottom"></p>
+            <p class='hex-text'>A blog-styled website where members of the Investment & Trading club could share
+              ideas and information, to encourage collaboration
+              and pooling of insights into market behaviour.</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Django | SQL | Heroku</p>
+            <hr class='feature-divider'>
+            <p>Authentication | Bootstrap4</p>
+            <hr class='feature-divider'>
+            <img src='media/bootstrap.png' style="width:45px;height:40px;">
+            <img src='media/django.png' style="width:80px;height:35px;">
+            <img src='media/sqlite.png' style="width:90px;height:40px;"><br>
+            <img class='icon' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/aitcblog';" style="cursor: pointer;">
+            <button class='gotoapp' onclick="location.href = 'https://aitcblog.herokuapp.com';">GO TO APP</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <p class='caption'>Stock Predictor📈</p>
-          <p class='hex-text'>A stock predicting program using the machine learning
-            models support vector machine and linear regression, predicting 30 days
-            into the future. It uses the financial data feed Quandl.</p>
-        </div>
-        <div class="flip-card-back">
-          <p>Jupyter | Numpy | Quandl</p>
-          <hr class='feature-divider'>
-          <p>Sci-Kit Learn | Python</p>
-          <hr class='feature-divider'>
-          <img src='media/quandl.png' style="width:40px;height:40px;">
-          <img src='media/jupyter.png' style="width:40px;height:40px;">
-          <img src='media/python.png' style="width:40px;height:40px;"><br>
-          <img class='coolimg' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/stockpredict';" style="cursor: pointer;">
-          <button class='gotoapp' onclick="location.href = 'predict.html';">GO TO APP</button>
 
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class='caption'>Chat Room App💬</p>
+            <p class='hex-text'>A realtime messaging app, using Socket.IO for
+              bi-directional communication between web clients and the server.
+              It runs on the lightweight Flask Python framework.</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Flask | SQL | Heroku</p>
+            <hr class='feature-divider'>
+            <p>Socket.IO | Python</p>
+            <hr class='feature-divider'>
+            <img src='media/socketio.png' style="width:45px;height:40px;">
+            <img src='media/flask.png' style="width:70px;height:35px;">
+            <img src='media/sqlite.png' style="width:90px;height:40px;"><br>
+            <img class='icon' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/flaskmsg';" style="cursor: pointer;">
+            <button class='gotoapp' onclick="location.href = 'http://flaskmsg.herokuapp.com/';">GO TO APP</button>
+
+          </div>
         </div>
       </div>
-    </div>
 
-
-    <div>
-      <div class="simpleapp" onclick="location.href='https://tricknacweather.herokuapp.com/';">
-        <span>
-          <h1> Weather App ⛅</h1>
-        </span>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class='caption'>Stock Predictor📈</p>
+            <p class='hex-text'>A stock predicting program using the machine learning
+              models support vector machine and linear regression, predicting 30 days
+              into the future. It uses the financial data feed Quandl.</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Jupyter | Numpy | Quandl</p>
+            <hr class='feature-divider'>
+            <p>Sci-Kit Learn | Python</p>
+            <hr class='feature-divider'>
+            <img src='media/quandl.png' style="width:40px;height:40px;">
+            <img src='media/jupyter.png' style="width:40px;height:40px;">
+            <img src='media/python.png' style="width:40px;height:40px;"><br>
+            <img class='icon' src='media/github.png' style="width:40px;height:40px;cursor: pointer;vertical-align:middle;margin-bottom:4px;margin-right:10px;" onclick="location.href='https://github.com/tricknac/stockpredict';"
+              style="cursor: pointer;">
+            <button class='gotoapp' onclick="location.href = 'predict.html';">GO TO APP</button>
+          </div>
+        </div>
       </div>
-      <!-- <div class="simpleapp" onclick="location.href='https://globalmsg.herokuapp.com/';">
+
+
+      <div>
+        <div class="simpleapp" onclick="location.href='https://tricknacweather.herokuapp.com/';">
+          <span>
+            <p class='caption'> Weather App ⛅</p>
+          </span>
+        </div>
+        <div class="simpleapp" onclick="location.href='https://flaskdictionary.herokuapp.com/';">
+          <span>
+            <p class='caption'> Dictionary App 📖</p>
+          </span>
+        </div>
+        <!-- <div class="simpleapp" onclick="location.href='https://globalmsg.herokuapp.com/';">
         <span>
           <h1> Stock Sim App 📈</h1>
         </span>
       </div> -->
-      <div class="simpleapp" onclick="location.href='https://flaskdictionary.herokuapp.com/';">
+        <!-- <div class="simpleapp" onclick="location.href='games.html';">
         <span>
-          <h1> Dictionary App 📖</h1>
-        </span>
-      </div>
-      <!-- <div class="simpleapp" onclick="location.href='https://tascottwatson.github.io/';">
-        <span>
-          <h1> Basketball 🏀</h1>
+          <h1> Games 🎮</h1>
         </span>
       </div> -->
-    </div>
-    <!-- <div class="simpleapp" style='width:190px;height:30px;margin-top:14px;margin-bottom: 100px;padding: 0px 0px 0px 10px' onclick="location.href='https://github.com/tricknac/practice/tree/master/PythonPractice';">
-      <p style='color:white;'>PYTHON PRACTICE</p>
-    </div> -->
+      </div>
 
+
+    </div>
   </div>
 
   <script type='text/javascript' src="particles.js"></script>
@@ -157,9 +158,6 @@
     particlesJS.load('particles-js', 'particles.json', function() {
       console.log('particles.json loaded!');
     });
-    // if (screen.width <= 699){
-    //   document.location = 'mobile.html';
-    // }
   </script>
 </body>
 

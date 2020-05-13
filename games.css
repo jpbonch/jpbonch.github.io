@@ -1,0 +1,45 @@
+body{
+  background-color: #11121a;
+  font-family: 'Raleway', sans-serif;
+}
+
+.game{
+  width: 30%;
+  float:left;
+  margin: 1.66%;
+  transition: filter 0.1s linear;
+}
+
+.back{
+  width:30px;
+  height:30px;
+  cursor: pointer;
+  float: left;
+  margin: 7px;
+}
+
+.icon{
+  width:30px;
+  height:30px;
+  cursor: pointer;
+  float: right;
+  margin: 7px;
+}
+.icon:hover{
+  filter: brightness(50%);
+}
+
+.game:hover{
+  filter: blur(5px);
+  cursor: pointer;
+}
+
+h1{
+  color:white;
+  margin-left: 1.66%;
+  font-size: 40px;
+  font-weight: 800;
+  border-bottom: 2px solid #666776;
+  width: 30%;
+  padding-bottom: 15px;
+}
